@@ -1,0 +1,19 @@
+server:
+  port: 8083
+
+spring:
+  config:
+    import: optional:file:.env[.properties]
+  application:
+    name: rating
+  jackson:
+    default-property-inclusion: NON_NULL
+
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://${EUREKA_HOST}:8761/eureka
+
+kafka:
+  bootstrap-servers: ${BOOTSTRAP_SERVERS}:9092
