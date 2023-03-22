@@ -8,6 +8,10 @@ spring:
     name: rating
   jackson:
     default-property-inclusion: NON_NULL
+  data:
+    mongodb:
+      database: ${DATASOURCE_NAME}
+      uri: mongodb+srv://${DATASOURCE_USERNAME}:${DATASOURCE_PASSWORD}@cluster0.lowllaw.mongodb.net/?retryWrites=true&w=majority
 
 
 eureka:
