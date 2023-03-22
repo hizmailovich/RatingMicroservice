@@ -15,9 +15,7 @@ public class RatingControllerAdvice {
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public InternalError handleOtherExceptions(Exception ex) {
         log.error(ex.getMessage(), ex);
-        return InternalError.builder()
-                .message("Please, try later!")
-                .build();
+        return new InternalError(null, "Please, try later!");
     }
 
 }

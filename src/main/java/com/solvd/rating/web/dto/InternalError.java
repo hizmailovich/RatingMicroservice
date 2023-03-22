@@ -1,8 +1,10 @@
 package com.solvd.rating.web.dto;
 
-import lombok.Builder;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
-@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public record InternalError(
 
         String field,
