@@ -3,7 +3,7 @@ package com.solvd.rating.web.dto;
 import lombok.Builder;
 
 @Builder
-public record ExceptionDto(
+public record InternalError(
 
         String field,
         String message
