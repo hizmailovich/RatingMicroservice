@@ -11,6 +11,6 @@ spring:
   data:
     mongodb:
       database: ${DATASOURCE_NAME}
-      uri: mongodb://${MONGODB_USER}:${MONGODB_PASSWORD}@${MONGODB_DOMAIN}:27017/raitings?authSource=admin
+      uri: mongodb://${MONGODB_USER}:${MONGODB_PASSWORD}@${MONGODB_DOMAIN}:27017/ratings?authSource=admin
 kafka:
   bootstrap-servers: ${BOOTSTRAP_SERVERS}:9092
