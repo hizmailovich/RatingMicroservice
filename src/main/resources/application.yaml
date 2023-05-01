@@ -11,13 +11,6 @@ spring:
   data:
     mongodb:
       database: ${DATASOURCE_NAME}
-      uri: mongodb+srv://${DATASOURCE_USERNAME}:${DATASOURCE_PASSWORD}@cluster0.lowllaw.mongodb.net/?retryWrites=true&w=majority
-
-
-eureka:
-  client:
-    service-url:
-      default-zone: http://${EUREKA_HOST}:8761/eureka
-
+      uri: mongodb://${MONGODB_USER}:${MONGODB_PASSWORD}@${MONGODB_DOMAIN}:27017/raitings?authSource=admin
 kafka:
   bootstrap-servers: ${BOOTSTRAP_SERVERS}:9092
